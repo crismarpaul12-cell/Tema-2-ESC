@@ -12,3 +12,7 @@ Acesta este un proiect de test pentru cursul de Software Development.
 
 \- Include logare în consolă pentru debugging.
 
+
+
+\## Proiect verificat final
+
