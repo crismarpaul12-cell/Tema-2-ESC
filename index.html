@@ -3,48 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Geolocation Finder</title>
+    <title>IP Locator - Tema 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>IP Locator (API 15)</h1>
-            <p>Vezi cine te urmărește 👀</p>
-        </header>
+        <h1>Detector IP & Locație</h1>
+        
+        <div id="rezultat" style="display: none;">
+            <img id="steag" src="" alt="Steag Țară" width="100">
+            
+            <table>
+                <tr>
+                    <td>IP:</td>
+                    <td id="ip">...</td>
+                </tr>
+                <tr>
+                    <td>Oraș:</td>
+                    <td id="oras">...</td>
+                </tr>
+                <tr>
+                    <td>Provider (ISP):</td>
+                    <td id="isp">...</td>
+                </tr>
+            </table>
+        </div>
 
-        <main>
-            <div id="result-card" class="card" style="display: none;">
-                
-                <img id="flag-img" src="" alt="Flag" class="flag-icon">
-                <h2 id="ip-address">0.0.0.0</h2>
-
-                <table class="data-table">
-                    <tr>
-                        <td>Țară:</td>
-                        <td id="country-name">-</td>
-                    </tr>
-                    <tr>
-                        <td>Oraș:</td>
-                        <td id="city-name">-</td>
-                    </tr>
-                    <tr>
-                        <td>ISP (Provider):</td>
-                        <td id="isp-name">-</td>
-                    </tr>
-                    <tr>
-                        <td>Coordonate:</td>
-                        <td id="coords">-</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="controls">
-                <p id="status-msg" class="status">Apasă butonul pentru localizare</p>
-                <button id="locate-btn">Detectează IP-ul Meu</button>
-            </div>
-        </main>
+        <button id="btn-cauta">Detectează Locația Mea</button>
+        <p id="mesaj-status">Apasă pe buton...</p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
